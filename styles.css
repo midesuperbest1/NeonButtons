@@ -1,0 +1,97 @@
+/* 
+ #333333;
+#1bffff;
+#1d1e79;
+ #d4145a; */
+
+ body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #031321;
+}
+
+button {
+    font-family: 'Gochi Hand', cursive;  
+    position: relative;
+    color: #2196f3;
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 5% 10%;
+    overflow: hidden;
+    border: none;
+    transition: .6s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    color: #333333;
+    background: #2196f3;
+    transition-delay: .5s;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    border-radius: 10px;
+}
+
+button:hover span:nth-child(1){
+    left: 100%;
+    transform: rotate(90deg);
+}
+button:hover span:nth-child(2){
+    top: 100%;
+}
+
+button:hover span:nth-child(3){
+    right: 100%;
+}
+button:hover span:nth-child(4){
+    bottom: 100%;
+}
+
+span {
+    display: block;
+    position: absolute;
+    transition: .6s ease;
+}
+
+span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+    transition-delay: .25s;
+}
+
+span:nth-child(2){
+    right: 0;
+    top: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(180deg, transparent, #2196f3);
+    transition-delay: .25s;
+}
+
+span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+    transition-delay: .25s;
+}
+
+span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(0, transparent, #2196f3);
+    transition-delay: .25s;
+}
