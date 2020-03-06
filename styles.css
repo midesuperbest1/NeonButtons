@@ -102,9 +102,9 @@ span:nth-child(4) {
 }
 
 .btn-blue span {
-  background: linear-gradient(0, transparent, #2196f3);
+  background: linear-gradient(0,transparent,#2196f3);
 }
 
 .btn-rose span {
-  background: linear-gradient(0, transparent, #d4145a);
+  background: linear-gradient(0,transparent,#d4145a);
 }
